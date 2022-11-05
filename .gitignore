@@ -31,3 +31,4 @@ public/test
 test.*
 
 secret_key
+config
