@@ -32,3 +32,4 @@ test.*
 
 secret_key
 config
+public/games
