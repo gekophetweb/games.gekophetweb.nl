@@ -1,0 +1,94 @@
+body {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container form {
+    margin-top: 30px;
+}
+
+.input-block {
+    margin-bottom: 15px;
+}
+
+input {
+    padding: 5px;
+}
+
+body {
+    background-position: right top;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body.background-01 {
+    background-image: url("/images/background/background-01.jpg");
+    background-color: #9FA09A;
+
+}
+
+body.background-02 {
+    background-image: url("/images/background/background-02.jpg");
+    background-color: #C7220E;
+}
+
+body.background-03 {
+    background-image: url("/images/background/background-03.jpg");
+    background-color: #060606;
+}
+
+body.background-04 {
+    background-image: url("/images/background/background-04.jpg");
+    background-color: #D3E4DE;
+}
+
+body.background-05 {
+    background-image: url("/images/background/background-05.jpg");
+    background-color: #89DBE6;
+}
+
+body.background-06 {
+    background-image: url("/images/background/background-06.jpg");
+    background-color: #FAC4D4;
+}
+
+body.background-07 {
+    background-image: url("/images/background/background-07.jpg");
+    background-color: #C7220E;
+}
+
+body.background-08 {
+    background-image: url("/images/background/background-08.jpg");
+
+}
+
+body.background-09 {
+    background-image: url("/images/background/background-09.jpg");
+}
+
+body.background-10 {
+    background-image: url("/images/background/background-10.jpg");
+}
+
+body.background-11 {
+    background-image: url("/images/background/background-11.jpg");
+}
+
+.refresh-background
+{
+    display:block;
+    position: absolute;
+    bottom:0;
+    left: 0;
+}

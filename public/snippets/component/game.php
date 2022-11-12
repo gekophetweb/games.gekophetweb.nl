@@ -1,0 +1,1 @@
+<a href="#" class="game js--game" data-id="<?=$game?>"><?=$game?></a>

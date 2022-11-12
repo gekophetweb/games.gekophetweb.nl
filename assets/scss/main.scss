@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container form {
+    margin-top: 30px;
+}
+
+.input-block {
+    margin-bottom: 15px;
+}
+
+input {
+    padding: 5px;
+}
+
+body {
+    background-position: right top 153px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
