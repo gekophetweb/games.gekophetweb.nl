@@ -20,9 +20,4 @@ $(document).ready(function ()
         $('.versions').hide();
         $(".games").show();
     });
-
-    $(".js--version").click(function (e)
-    {
-        e.preventDefault();
-    });
 })

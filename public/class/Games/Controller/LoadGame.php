@@ -22,8 +22,8 @@
 
         public function displayFile(string $fileLoc): void
         {
-            $mimeType     = mime_content_type($fileLoc);
-            header('Content-type: ' . $mimeType);
+            $mimeType = mime_content_type($fileLoc);
+            header('Content-type: '.$mimeType);
             require($fileLoc);
             exit;
         }
@@ -44,11 +44,14 @@
                 }
             }
 
-            foreach ($scanned_directory as $file)
+            if (!isset($_GET['file']) || !stristr($_GET['file'], "."))
             {
-                if (is_file($dir.$file) && stristr($file, ".html") && !stristr($file, ".html.tmp"))
+                foreach ($scanned_directory as $file)
                 {
-                    require($dir.$file);
+                    if (is_file($dir.$file) && stristr($file, ".html") && !stristr($file, ".html.tmp"))
+                    {
+                        require($dir.$file);
+                    }
                 }
             }
         }

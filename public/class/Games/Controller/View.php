@@ -12,19 +12,20 @@
 
         public function __construct()
         {
-            if (isset($_GET['tempTest']))
-            {
-                $_SESSION['user']    = 'gekophetweb';
-                $_SESSION['game']    = "Crucial Investigation";
-                $_SESSION['version'] = '1.32';
-            }
-
             $this->_check();
         }
 
         public function _check()
         {
 
+            if (isset($_GET["game"]))
+            {
+                $_SESSION['game'] = $_GET["game"];
+            }
+            if (isset($_GET["version"]))
+            {
+                $_SESSION['version'] = $_GET["version"];
+            }
 
             if (isset($_GET['reset']))
             {
@@ -51,7 +52,7 @@
                 $game    = $_SESSION['game'];
                 $version = $_SESSION['version'];
 
-                if(!isset($gamesVersions[$game]) || !isset($gamesVersions[$game][$version]))
+                if (!isset($gamesVersions[$game]) || !isset($gamesVersions[$game][$version]))
                 {
                     unset($_SESSION['game'], $_SESSION['version']);
                 }
