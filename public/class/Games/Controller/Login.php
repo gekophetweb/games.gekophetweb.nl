@@ -48,9 +48,6 @@
                 $this->_verified  = true;
                 $_SESSION['user'] = 'gekophetweb';
             }
-            else{
-                debug($token, $_SESSION, $_POST);
-            }
         }
 
         public function display(): void
@@ -69,7 +66,7 @@
                 $backgroundId = "0".$backgroundId;
             }
 
-            $token             = md5("test---".strtotime("now"));
+            $token             = md5("games---".strtotime("now"));
             $_SESSION['token'] = $token;
 
             $page = "login";
