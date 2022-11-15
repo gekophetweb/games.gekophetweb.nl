@@ -42,6 +42,7 @@
                 $token = $_POST['token'];
             }
 
+
             if ($_SESSION['token'] === $token && $user === 'gekophetweb' && $password === 'Tzpr7RS9')
             {
                 $this->_verified  = true;
@@ -65,7 +66,7 @@
                 $backgroundId = "0".$backgroundId;
             }
 
-            $token             = uniqid();
+            $token             = md5("test---".strtotime("now"));
             $_SESSION['token'] = $token;
 
             $page = "login";

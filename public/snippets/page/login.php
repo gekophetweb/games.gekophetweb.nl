@@ -9,6 +9,9 @@
         <div class="">
             <input type="submit" value="login">
             <input type="hidden" name="token" value="<?= $token ?>">
+            <?php
+            debug($token, $_SESSION);
+            ?>
         </div>
     </form>
 

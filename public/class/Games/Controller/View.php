@@ -39,7 +39,7 @@
                 }
             }
 
-            if (isset($_SESSION['user']) && $_SESSION['user'] !== 'gekophetweb')
+            if (isset($_SESSION['user']) && ($_SESSION['user'] !== 'gekophetweb') || isset($_GET["logout"]))
             {
                 unset($_SESSION['user']);
             }
