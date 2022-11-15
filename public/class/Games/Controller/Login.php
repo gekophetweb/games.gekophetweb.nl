@@ -48,6 +48,9 @@
                 $this->_verified  = true;
                 $_SESSION['user'] = 'gekophetweb';
             }
+            else{
+                debug($token, $_SESSION, $_POST);
+            }
         }
 
         public function display(): void
