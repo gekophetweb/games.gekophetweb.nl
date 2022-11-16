@@ -43,7 +43,7 @@
             }
 
 
-            if ($_SESSION['token'] === $token && $user === 'gekophetweb' && $password === 'Tzpr7RS9')
+            if (($_SESSION['token'] === $token || LOCAL) && $user === 'gekophetweb' && $password === 'Tzpr7RS9')
             {
                 $this->_verified  = true;
                 $_SESSION['user'] = 'gekophetweb';
