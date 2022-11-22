@@ -25,15 +25,7 @@
             $mimeType = mime_content_type($fileLoc);
             ob_get_clean();
             header('Content-type: '.$mimeType);
-            if (stristr($mimeType, "mp4"))
-            {
-                $this->displayVideoFile($fileLoc, $mimeType);
-            }
-            ob_start();
-            require($fileLoc);
-            $data = ob_get_clean();
-            echo $data;
-
+            $this->displayVideoFile($fileLoc, $mimeType);
             exit;
         }
 
