@@ -10,8 +10,8 @@
     <meta charset="utf-8">
     <meta name="keywords" content="Gekophetweb games">
     <meta name="description" content="Gekophetweb personal location">
-    <link href="css/main.css" type="text/css" rel="stylesheet">
-    <link href="css/game.css" type="text/css" rel="stylesheet">
+    <link href="/css/main.css" type="text/css" rel="stylesheet">
+    <link href="/css/game.css" type="text/css" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/f166e76dfa.js" crossorigin="anonymous"></script>
 </head>
